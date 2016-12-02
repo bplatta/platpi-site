@@ -19,8 +19,8 @@
   <div class="landing-projects pure-g">
     {{ range first 3 (where .Site.Pages "Type" "projects") }}
       <div class="project pure-u-1 pure-u-md-1-3">
-        <a href="{{ .Permalink }}">
-          {{ partial "logos/main" .Params.logo }}
+        <a href="/projects/">
+          {{ partial "logos/main" (dict "page" "landing-page" "logo" .Params.logo) }}
           <h3 class="clear-both">{{ .Title }}</h3>
         </a>
       </div>

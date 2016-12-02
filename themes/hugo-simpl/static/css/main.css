@@ -479,7 +479,7 @@ pre > code {
 #landing-page p {
   font-size: 1.3em;
 }
-.wrapper.platpi {
+.wrapper.home {
   /* main background gradient - change this here
   /* Create one at: http://colorzilla.com/gradient-editor/ */
   background: -moz-linear-gradient(-45deg, rgba(30,87,153,1) 0%, rgba(24,141,240,0.86) 100%); /* FF3.6-15 */
@@ -487,7 +487,7 @@ pre > code {
   background: linear-gradient(135deg, rgba(30,87,153,1) 0%,rgba(24,141,240,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#8f188df0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-.wrapper.platpi .block-main {
+.wrapper.home .block-main {
   margin-top: 4em;
 }
 #landing-nav-list ul li {
@@ -679,6 +679,7 @@ pre > code {
 }
 .content-list-projects .project .project-logo {
   padding-top: 5px;
+  height: 4em;
 }
 .content-list-projects .project .project-logo img {
   height: 4em;
@@ -701,6 +702,10 @@ pre > code {
 .content-list-projects .project .about .facts .project-stage {
   font-style: italic;
   color: #ff966a;
+}
+.content-list-projects .project .about .facts .live {
+  font-style: italic;
+  color: #00AC67;
 }
 /**
  * Color transitions and color classes
@@ -739,11 +744,11 @@ pre > code {
   bottom: 0px;
 }
 
-.platpi #footer, .platpi #footer a {
+.home #footer, .home #footer a {
   color: white;
 }
 
-.ff-logo { width: 60px; }
+.ff-logo { width: 60px; display: inline-block; }
 .ff-logo div {
   width: 15px;
   height: 15px;
@@ -754,5 +759,5 @@ pre > code {
   float: left;
 }
 .content-list-projects .project-logo .ff-logo div {
-  background-color: #06426e;
+  background-color: #188df0;
 }

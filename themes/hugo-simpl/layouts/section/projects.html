@@ -13,14 +13,14 @@
       {{ range .Data.Pages.ByPublishDate }}
         <div class="project pure-g">
           <div class="logo pure-u-1 pure-u-md-1-2">
-            {{ partial "logos/main" .Params.logo }}
+            {{ partial "logos/main" (dict "page" "projects-page" "logo" .Params.logo) }}
           </div>
           <div class="about pure-u-1 pure-u-md-1-2">
             <h5>{{ .Title | markdownify }}</h5>
             <div>{{ .Params.description }}</div>
             <div class="facts">
               <span class="project-stage">{{ .Params.stage }}</span>
-              <span>{{ .Params.live }}</span>
+              {{ if .Params.live }}<span class="live">Live</span>{{ end }}
               {{ if .Params.site }}
               <span>
                 <a href="{{ .Params.site }}">

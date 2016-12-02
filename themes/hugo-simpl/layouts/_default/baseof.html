@@ -1,5 +1,3 @@
-{{ $wrapperCls := replaceRE " " "-" .Title }}
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,10 +7,9 @@
       {{ partial "head_includes" .}}
   </head>
   <body>
-    <div class="wrapper {{ .Title | lower }}">
+    <div class="wrapper {{ if .IsHome }}home{{ end }}">
       {{ block "nav" . }}
       {{ end }}
-
       <div class="block-main pure-g">
         {{ block "main" . }}
         {{ end }}
