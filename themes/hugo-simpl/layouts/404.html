@@ -1,0 +1,14 @@
+{{ define "title" }}
+  {{ .Site.Title }} &#124; 404
+{{ end }}
+
+{{ define "nav" }}
+ {{ partial "nav" . }}
+{{ end }}
+
+{{ define "main" }}
+<div class="pure-u-1 pure-u-md-1-3">
+  <h3>404</h3>
+  <p>You seem to have stumbled on to a part of the internet that prefers not to exist.</p>
+</div>
+{{ end }}

@@ -1,0 +1,49 @@
+{{ define "title" }}
+  {{ .Site.Title }} &#124; {{ .Title }}
+{{ end }}
+
+{{ define "nav" }}
+ {{ partial "nav" . }}
+{{ end }}
+
+{{ define "main" }}
+  <div class="content-list-projects pure-u-1 pure-u-md-1-2">
+    <h3>Projects</h3>
+    <div class="projects-container">
+      {{ range .Data.Pages.ByPublishDate }}
+        <div class="project pure-g">
+          <div class="logo pure-u-1 pure-u-md-1-2">
+            {{ partial "logos/main" .Params.logo }}
+          </div>
+          <div class="about pure-u-1 pure-u-md-1-2">
+            <h5>{{ .Title | markdownify }}</h5>
+            <div>{{ .Params.description }}</div>
+            <div class="facts">
+              <span class="project-stage">{{ .Params.stage }}</span>
+              <span>{{ .Params.live }}</span>
+              {{ if .Params.site }}
+              <span>
+                <a href="{{ .Params.site }}">
+                  <i class="fa fa-globe"></i>
+                </a>
+              </span>
+              {{ end }}
+              {{ if .Params.repository }}
+              <span>
+                <a href="{{ .Params.repository }}">
+                  {{ if in .Params.repository "gitlab" }}
+                    <i class="fa fa-gitlab"></i>
+                  {{ end }}
+                  {{ if in .Params.repository "github" }}
+                    <i class="fa fa-github"></i>
+                  {{ end }}
+                </a>
+              </span>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

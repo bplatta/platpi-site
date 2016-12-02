@@ -1,0 +1,25 @@
+<nav id="main-nav" class="header-nav pure-g">
+  <div class="content-nav pure-u-1 pure-u-md-2-3">
+    <div id="header-logo" class="float-left">
+      <a class="logo" href="{{ .Site.BaseURL }}">
+        <span></span>
+      </a>
+    </div>
+    <div id="header-menu-nav" class="float-right">
+      <button id="ham-button" class="hamburger hamburger--collapse" type="button" onClick="onMenuClick(this)">
+        <span class="hamburger-box">
+          <span class="hamburger-inner bg-fade"></span>
+        </span>
+      </button>
+    </div>
+    <div id="main-nav-list" class="nav-options clear-both">
+      <ul>
+      {{ if .Site.Menus.main }}
+        {{ range sort .Site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      {{ end }}
+      </ul>
+    </div>
+  </div>
+</nav>

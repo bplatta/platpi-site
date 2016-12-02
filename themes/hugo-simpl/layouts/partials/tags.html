@@ -1,0 +1,7 @@
+{{ $Type := .TagType }}
+<div class="tag-row {{ .TagType }}">
+  {{- .TagType -}}:
+  {{- range $text := .Tags -}}
+    <span><a href="{{ $.Site.BaseURL }}{{ $Type | relLangURL }}/{{ $text | urlize }}/">{{ $text }}</a></span>
+  {{- end -}}
+</div>

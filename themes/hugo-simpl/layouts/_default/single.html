@@ -1,0 +1,26 @@
+{{ define "title" }}
+  {{ .Site.Title }} &#124; {{ .Title }}
+{{ end }}
+
+{{ define "nav" }}
+ {{ partial "nav" . }}
+{{ end }}
+
+{{ define "main" }}
+  <div class="content-single pure-u-1 pure-u-md-1-2">
+    <h3>
+      <strong>{{ .Title }}</strong>
+    </h3>
+    <div class="raw-content">
+      {{ .Content }}
+      {{ if isset .Params "social" }}
+        {{ partial "social" . }}
+      {{ end }}
+      <div class="content-footer">
+        <h6 style="text-align: right">
+          {{ .Date.Format "January 2, 2006" }}
+        </h6>
+      </div>
+    </div>
+  </div>
+{{ end }}

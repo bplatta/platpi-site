@@ -1,0 +1,26 @@
+{{ $wrapperCls := replaceRE " " "-" .Title }}
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>{{ block "title" . }}
+        {{- .Site.Title -}}
+      {{ end }}</title>
+      {{ partial "head_includes" .}}
+  </head>
+  <body>
+    <div class="wrapper {{ .Title | lower }}">
+      {{ block "nav" . }}
+      {{ end }}
+
+      <div class="block-main pure-g">
+        {{ block "main" . }}
+        {{ end }}
+      </div>
+      {{ partial "footer" .}}
+    </div>
+    <script type="text/javascript">
+      window.isLandingPage = "{{ .Title }}" === "{{ .Site.Title }}";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+{{ if .partial }}
+  <div class="project-logo text-align-center">{{ partial .partial . }}</div>
+{{ else if .src }}
+  <div class="project-logo text-align-center"><img src="{{ .src }}" /></div>
+{{ end }}

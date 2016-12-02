@@ -1,0 +1,28 @@
+{{ define "title" }}
+  {{ .Site.Title }} &#124; {{ .Title }}
+{{ end }}
+
+{{ define "nav" }}
+ {{ partial "nav" . }}
+{{ end }}
+
+{{ define "main" }}
+  <div class="content-single-post pure-u-1 pure-u-md-1-2">
+    <div class="back-button">
+      <a href="{{ $.Site.BaseURL }}{{ .Section }}/"><i class="fa fa-angle-left"></i>&nbsp;&nbsp;&nbsp;&nbsp;Archive</a>
+    </div>
+    <h3>
+      <strong>{{ .Title }}</strong>
+      <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+    </h3>
+    {{ if .Params.tags }}
+      {{ partial "tags" (dict "Tags" .Params.tags "TagType" "tags")}}
+    {{ end }}
+    {{ if .Params.categories }}
+      {{ partial "tags" (dict "Tags" .Params.categories "TagType" "categories")}}
+    {{ end }}
+    <div class="content-raw">
+      {{ .Content }}
+    </div>
+  </div>
+{{ end }}

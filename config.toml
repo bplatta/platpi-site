@@ -1,0 +1,63 @@
+baseurl = "https://platpi.com/"
+languageCode = "en-US"
+DefaultContentLanguage = "en"
+title = "platpi"
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+theme = "hugo-simpl"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[permalinks]
+  posts = "/posts/:year/:month/:slug"
+
+[params]
+  author = "Ben Platta"
+  description = "Platpi software"
+  landingRoutes = [
+    "about", "blog"
+  ]
+
+  # Custom assets can be linked with their paths relative to static/
+  custom_css = []
+  custom_js  = ["main.js"]
+
+[social]
+  Github        = "bplatta"
+  Gitlab        = "bplatta"
+  LinkedIn      = "benjamin-platta-54357531"
+  Stackoverflow = "users/2365352/ben-platta"
+
+## Main Menu
+[[menu.main]]
+  name = "blog"
+  weight = 100
+  landing = "true"
+  identifier = "posts"
+  url = "/posts/"
+[[menu.main]]
+  name = "about"
+  weight = 200
+  landing = "true"
+  identifier = "about"
+  url = "/about/"
+[[menu.main]]
+  name = "contact"
+  weight = 300
+  landing = "false"
+  identifier = "contact"
+  url = "/contact/"
+[[menu.main]]
+  name = "projects"
+  weight = 400
+  landing = "false"
+  identifier = "projects"
+  url = "/projects/"
+[[menu.main]]
+  name = "philosophy"
+  weight = 500
+  landing = "false"
+  identifier = "philosophy"
+  url = "/philosophy/"
