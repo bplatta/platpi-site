@@ -5,15 +5,6 @@
  * these days. So ill define high level theme vars
  * here and perhpas a find-and-replace will suffice
  *
- * // colors
- * landing_page_bg: #06426e
- * default_bg: white
- * light_underline: #C4DBEF
- * primary_color: #06426e
- * primary_color_light: #188df0
- * accent_color: #08f193
- * accent_color_dark: #00AC67;
- * accent_color_2: #ff5209
  *
  * // sizing
  * default_font_size: 14px
@@ -23,6 +14,8 @@
  * new colors
  * dark bg blue - 021A2C
  * light color blue -  f5f8fb
+ * orange - FF7338
+ * green 00AC67
  *
  * 
  */
@@ -57,7 +50,7 @@ body {
 [class^="content"] h3,
 [class^="content"] h4,
 [class^="content"] h5 {
-  border-bottom: 1px solid #C4DBEF;
+  border-bottom: 1px solid #f5f8fb;
   color: #f5f8fb;
 }
 .float-right {
@@ -164,9 +157,9 @@ pre > code {
   position: absolute;
   background: rgba(2,26,44,0.8);
   
-  -moz-border-image: -moz-linear-gradient(right, #00AC67 0%, #ff5209 100%);
-  -webkit-border-image: -webkit-linear-gradient(right, #00AC67 0%, #ff5209 100%);
-  border-image: linear-gradient(to left, #00AC67 0%, #ff5209 100%);
+  -moz-border-image: -moz-linear-gradient(right, rgba(255, 115, 56, 1) 0%, rgba(0, 172, 103, 1) 100%);
+  -webkit-border-image: -webkit-linear-gradient(right, rgba(255, 115, 56, 1) 0%, rgba(0, 172, 103, 1) 100%);
+  border-image: linear-gradient(to left, rgba(255, 115, 56, 1) 0%, rgba(0, 172, 103, 1) 100%);
   border-image-slice: 1;
   border-bottom: 2px solid transparent;
   transition: opacity 0.5s ease;
@@ -285,7 +278,7 @@ pre > code {
 .header-nav.transparent .logo span,
 .header-nav.transparent .logo span::after,
 .header-nav.transparent .logo span::before {
-  background-color: #ff5209;
+  background-color: #FF7338;
 }
 .header-nav .logo span::before {
   top: 7px;
@@ -601,7 +594,7 @@ pre > code {
 }
 .tag-row span {
   color: white;
-  background-color: #ff5209;
+  background-color: #FF7338;
   padding: 2px 5px;
   border-radius: 2px;
   margin: 0 3px; 
@@ -700,7 +693,7 @@ pre > code {
   background-color: #08f193;
 }
 .bg-color-3 {
-  background-color: #ff5209;
+  background-color: #FF7338;
 }
 
 .color-1 {
@@ -710,7 +703,7 @@ pre > code {
   color: #08f193;
 }
 .color-3 {
-  color: #ff5209;
+  color: #FF7338;
 }
 
 /**
