@@ -127,27 +127,16 @@
     // For the root / - Landing page JS
     // 
     const landingPageId = 'landing-page';
-    const machineNameId = 'machine-name';
     
     function changeLogoClassWait() {
       const element = document.getElementById(landingPageId);
       setTimeout(function() {
-        element.classList.add(randomFromArray(['orange', 'green', 'dark']));
+        element.classList.add(randomFromArray(['orange', 'green']));
       }, 2000)
-    }
-
-    function changeRobotName() {
-      const element = document.getElementById(machineNameId);
-      setTimeout(function() {
-        element.innerHTML = randomFromArray([
-          'Judith', 'George', 'Jerry', 'Gladys', 'Mateo'
-        ]);
-      }, 100)
     }
 
     // Call on page load
     onloadQueue.push(changeLogoClassWait);
-    onloadQueue.push(changeRobotName);
 
     /**
      * On hover animate the logo

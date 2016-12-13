@@ -55,9 +55,3 @@ category = "categories"
   landing = "false"
   identifier = "projects"
   url = "/projects/"
-[[menu.main]]
-  name = "philosophy"
-  weight = 500
-  landing = "false"
-  identifier = "philosophy"
-  url = "/philosophy/"
