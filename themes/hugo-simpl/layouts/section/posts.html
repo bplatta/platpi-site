@@ -8,7 +8,14 @@
 
 {{ define "main" }}
   <div class="content-list-posts pure-u-1 pure-u-md-1-2">
-    <h3>Archive</h3>
+    <h3>
+      Archive
+      {{- if .Site.Params.postsRepo -}}
+          <a href="{{ .Site.Params.postsRepo }}">
+            <i class="fa fa-github"></i>
+          </a>
+      {{- end -}}
+    </h3>
     {{ range .Data.Pages.ByPublishDate }}
     <div class="list-blurb">
       <div class="list-post-title">

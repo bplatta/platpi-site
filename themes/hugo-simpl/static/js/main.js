@@ -50,7 +50,6 @@
   const isEscapeKey = isKey(['Escape', 'Esc'], 27);
   const isM = isKey(['m'], 77);
 
-
   /**
    * Toggle menu class
    * @param  {DomElement} element
@@ -72,18 +71,6 @@
   }
 
   /**
-   * Fade out the main navigation by changing classes on scroll
-   */
-  function fadeMainNavOnScroll(navElement) {
-    const transparentCls = 'transparent';
-    if ( window.pageYOffset > 100 ) {
-        navElement.classList.add(transparentCls);
-    } else {
-        navElement.classList.remove(transparentCls);
-    }
-  }
-
-  /**
    * Call queue functions on window.onload
    * @type {Array}
    */
@@ -97,12 +84,6 @@
    **************/
   
   if (!window.isLandingPage) {
-    /**
-     * On scroll, fade out the navigation
-     */
-    window.onscroll = function() {
-      fadeMainNavOnScroll(document.getElementById(mainNavId));
-    }
 
     /**
      * Setup some nifty shortcodes for fun
@@ -132,7 +113,7 @@
       const element = document.getElementById(landingPageId);
       setTimeout(function() {
         element.classList.add(randomFromArray(['orange', 'green']));
-      }, 2000)
+      }, 1300)
     }
 
     // Call on page load

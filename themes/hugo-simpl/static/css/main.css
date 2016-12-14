@@ -54,7 +54,8 @@ body p {
 [class^="content"] h3,
 [class^="content"] h4,
 [class^="content"] h5 {
-  border-bottom: 1px solid #f5f8fb;
+  /*border-bottom: 1px solid #f5f8fb;*/
+  text-align: center;
   color: #f5f8fb;
 }
 .float-right {
@@ -104,6 +105,7 @@ h3 {
  */
 code {
   background: #f4f5f6;
+  color: #021A2C;
   border-radius: .4rem;
   font-size: 86%;
   margin: 0 .2rem;
@@ -114,7 +116,7 @@ code {
 
 pre {
   background: #f4f5f6;
-  border-left: 0.3rem solid #188df0;
+  border-left: 0.3rem solid #00AC67;
 }
 
 pre > code {
@@ -159,7 +161,7 @@ pre > code {
   height: 100%;
   z-index: -1;
   position: absolute;
-  background: rgba(2,26,44,0.8);
+  background: rgba(2,26,44,0.9);
   
   -moz-border-image: -moz-linear-gradient(right, rgba(255, 115, 56, 1) 0%, rgba(0, 172, 103, 1) 100%);
   -webkit-border-image: -webkit-linear-gradient(right, rgba(255, 115, 56, 1) 0%, rgba(0, 172, 103, 1) 100%);
@@ -278,12 +280,6 @@ pre > code {
   -o-transition: background-color 0.2s ease;
 }
 
-
-.header-nav.transparent .logo span,
-.header-nav.transparent .logo span::after,
-.header-nav.transparent .logo span::before {
-  background-color: #FF7338;
-}
 .header-nav .logo span::before {
   top: 7px;
   left: 5px;
@@ -617,9 +613,9 @@ pre > code {
  * Blog post
  */
 .post-date {
-  float: right;
   font-size: 0.6em;
   padding-top: 0.7em;
+  display: block;
 }
 .content-raw {
   margin-bottom: 3em;
@@ -656,7 +652,13 @@ pre > code {
 /** 
  * Projects List
  */
+.content-list-projects .projects-container {
+  padding: 0 1em;
+}
 .content-list-projects .project {
+  margin: 1em 0;
+}
+.content-list-projects .project > div {
   margin: 1em 0;
 }
 .content-list-projects .project .project-logo {
@@ -666,16 +668,13 @@ pre > code {
 .content-list-projects .project .project-logo img {
   height: 4em;
 }
-.content-list-projects .project .about {
-  width: 50%;
-}
 .content-list-projects .project .about h5 {
   border: none;
+  text-align: left;
   font-size: 1.3em;
   margin: 0 0 .5em 0;
 }
 .content-list-projects .project .about .facts {
-  text-align: center;
   margin-top: 5px;
 }
 .content-list-projects .project .about .facts span {
