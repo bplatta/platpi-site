@@ -28,7 +28,8 @@ category = "categories"
   Github        = "bplatta"
   Gitlab        = "bplatta"
   LinkedIn      = "benjamin-platta-54357531"
-  Stackoverflow = "users/2365352/ben-platta"
+  Kaggle        = "bplatta"
+  # Stackoverflow = "users/2365352/ben-platta"
 
 ## Main Menu
 [[menu.main]]

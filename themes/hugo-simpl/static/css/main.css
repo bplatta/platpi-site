@@ -439,7 +439,6 @@ pre > code {
 }
 #landing-page .landing-par a {
   color: white;
-  border-bottom: 1px solid;
 
   transition: color 0.4s ease;
   -webkit-transition: color 0.4s ease;
@@ -447,6 +446,10 @@ pre > code {
   -ms-transition: color 0.4s ease;
   -o-transition: color 0.4s ease;
 }
+#landing-page .landing-par span a {
+  padding: 0 1.5em;
+  font-size: 1.3em;
+} 
 /* link color changes with logo */
 #landing-page.green .landing-par a { color: #08f193; }
 #landing-page.orange .landing-par a { color: #FF7338; }
@@ -528,18 +531,18 @@ pre > code {
 }
 #landing-page .big-logo div:nth-child(2) span:nth-child(1) {
   width: 35px;
-  height: 130px;
+  height: 100px;
   box-shadow: 2px -1.5px 0.8px #08f193;
   border-radius: 2px;
 }
 #landing-page .big-logo div:nth-child(2) span:nth-child(2) {
   width: 35px;
-  height: 130px;
+  height: 110px;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
   box-shadow: 2px 1px 0.8px #08f193;
   margin-top: -3px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-left: 3em; 
 }
 /* Projects list on landing page */
@@ -718,6 +721,7 @@ pre > code {
   width: 100%;
   text-align: center;
   color: #f5f8fb;
+  opacity: 0.5;
   padding-bottom: 5px;
   position: absolute;
   bottom: 0px;
