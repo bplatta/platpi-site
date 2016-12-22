@@ -51,11 +51,11 @@ body p {
 [class^="content"] {
   margin: 0 auto;
 }
-[class^="content"] h3,
-[class^="content"] h4,
-[class^="content"] h5 {
-  /*border-bottom: 1px solid #f5f8fb;*/
+[class^="content"]> h3,
+[class^="content"]> h4,
+[class^="content"]> h5 {
   text-align: center;
+  /*border-bottom: 1px solid #f5f8fb;*/
   color: #f5f8fb;
 }
 .float-right {
@@ -69,6 +69,7 @@ body p {
 }
 .block-main {
   margin-top: 6em;
+  margin-bottom: 4em;
   padding: 0 15px;
 }
 .text-align-center {
@@ -153,7 +154,6 @@ pre > code {
   opacity: 0.85;
 }*/
 
-/* by default - after element is visible due to zindex and opacity */
 .header-nav::after {
   content: '';
   display: block;
@@ -264,7 +264,18 @@ pre > code {
   height: 3em;
 }
 
-.header-nav .logo span,
+.header-nav .logo span {
+  border-radius: 50%;
+  display: inline-block;
+  border: 3px solid #fff;
+  width: 2em;
+  position: absolute;
+  top: 7px;
+  height: 2em;
+  box-shadow: 1.5px -0.5px 5px #08f193;
+}
+
+/*.header-nav .logo span,
 .header-nav .logo span::after,
 .header-nav .logo span::before {
   content: '';
@@ -303,7 +314,7 @@ pre > code {
   box-shadow: 1px 0px 0.8px #08f193;
   border-bottom-right-radius: 1px;
   border-bottom-left-radius: 1px;
-}
+}*/
 
 /*!
  * Hamburgers
@@ -479,68 +490,34 @@ pre > code {
   margin: 0 auto;
   position: relative;
 }
-#landing-page .big-logo div span {
-  background-color: white;
-  display: inline-block;
-  opacity: 0.75;
-}
-#landing-page .logo-container {
-  width: 100%;
-}
-#landing-page.orange .big-logo div span {
-  background-color: #FF7338;
-}
-#landing-page.green .big-logo div span {
-  background-color: #08f193;
-}
-#landing-page.dark .big-logo div span {
-  background-color: #0E5590;
-}
-#landing-page.orange .big-logo div:nth-child(1) span,
-#landing-page.green .big-logo div:nth-child(1) span {
-  box-shadow: 2px -2px 0.8px white;
-}
-#landing-page.orange .big-logo div:nth-child(2) span:nth-child(1),
-#landing-page.green .big-logo div:nth-child(2) span:nth-child(1) {
-  box-shadow: 2px -1.5px 0.8px white;
-}
-#landing-page.orange .big-logo div:nth-child(2) span:nth-child(2),
-#landing-page.green .big-logo div:nth-child(2) span:nth-child(2) {
-  box-shadow: 2px 1px 0.8px white;
-}
-#landing-page .big-logo div span {
-  background-color: white;
-  display: inline-block;
-  opacity: 0.80;
 
-  transition: background-color 0.4s ease;
-  -webkit-transition: background-color 0.4s ease;
-  -moz-transition: background-color 0.4s ease;
-  -ms-transition: background-color 0.4s ease;
-  -o-transition: background-color 0.4s ease;
+#landing-page .big-logo span {
+  margin: 0 auto;
+  display: block;
+  width: 12em;
+  height: 12em;
+  border-radius: 50%;
+  position: relative;
+  background: : -moz-linear-gradient(-45deg, rgba(255, 115, 56, 1) 0%, rgba(0, 172, 103, 1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(255, 115, 56, 1) 0%, rgba(0, 172, 103, 1) 100%);
+  background: linear-gradient(135deg, rgba(255, 115, 56, 1) 0%, rgba(0, 172, 103, 1) 100%);
 }
-#landing-page .big-logo div:nth-child(1) span {
-  width: 180px;
-  height: 35px;
-  box-shadow: 2px -2px 0.8px #08f193;
-  border-radius: 2px;
+
+#landing-page .big-logo span:after {
+  position: absolute;
+  display: block;
+  height: 11.5em;
+  width: 11.5em;
+  content: '';
+  top: 4px;
+  left: 4px;
+  border-radius: inherit;
+  background: -moz-linear-gradient(-45deg, rgba(2,26,44, 1) 10%, rgba(4, 55, 93, 1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(2,26,44,1) 10%,rgba(4, 55, 93, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(2,26,44,1) 10%,rgba(4, 55, 93, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#8f188df0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-#landing-page .big-logo div:nth-child(2) span:nth-child(1) {
-  width: 35px;
-  height: 100px;
-  box-shadow: 2px -1.5px 0.8px #08f193;
-  border-radius: 2px;
-}
-#landing-page .big-logo div:nth-child(2) span:nth-child(2) {
-  width: 35px;
-  height: 110px;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  box-shadow: 2px 1px 0.8px #08f193;
-  margin-top: -3px;
-  margin-bottom: 5px;
-  margin-left: 3em; 
-}
+
 /* Projects list on landing page */
 .landing-projects {
   margin-bottom: 5em;
@@ -622,6 +599,11 @@ pre > code {
 }
 .content-single-post .back-button {
   font-size: 1.2em;
+}
+.content-raw h3,
+.content-raw h4,
+.content-raw h5 {
+  text-align: left;
 }
 
 /**
