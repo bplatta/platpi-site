@@ -37,14 +37,14 @@ body {
 }
 
 body p {
-  line-height: 1.4em;
+  line-height: 1.8em;
 }
 
 .wrapper {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-  background-color: #021A2C;
+  background-color: #032742;
   color: #f5f8fb;
 }
 
@@ -161,13 +161,13 @@ pre > code {
   height: 100%;
   z-index: -1;
   position: absolute;
-  background: rgba(2,26,44,0.9);
+  background: rgba(3,39,66,0.9);
   
   -moz-border-image: -moz-linear-gradient(right, rgba(255, 115, 56, 1) 0%, rgba(0, 172, 103, 1) 100%);
   -webkit-border-image: -webkit-linear-gradient(right, rgba(255, 115, 56, 1) 0%, rgba(0, 172, 103, 1) 100%);
   border-image: linear-gradient(to left, rgba(255, 115, 56, 1) 0%, rgba(0, 172, 103, 1) 100%);
   border-image-slice: 1;
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
   transition: opacity 0.5s ease;
   -webkit-transition: opacity 0.5s ease;
   -moz-transition: opacity 0.5s ease;
@@ -719,9 +719,8 @@ pre > code {
   margin: 2px;
   border-radius: 50%;
   background: white;
-  opacity: 0.8;
   float: left;
 }
 .content-list-projects .project-logo .ff-logo div {
-  background-color: #357F82;
+  background-color: white;
 }

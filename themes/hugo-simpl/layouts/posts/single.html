@@ -13,8 +13,16 @@
     </div>
     <h3>
       <strong>{{ .Title }}</strong>
-      <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+      <span class="post-date">
+        {{ .Date.Format "January 2, 2006" }}
+        <a href="{{ .Site.Params.PostHistoryPath }}{{ .File.LogicalName }}">
+          <i class="fa fa-history"></i>
+        </a>
+      </span>
     </h3>
+    {{ if .Params.length }}
+      length: {{ .Params.length }} min
+    {{ end }}
     {{ if .Params.tags }}
       {{ partial "tags" (dict "Tags" .Params.tags "TagType" "tags")}}
     {{ end }}

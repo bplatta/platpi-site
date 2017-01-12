@@ -6,7 +6,7 @@ tags = [
 categories = [
 ]
 date = "2016-12-15T22:49:03-06:00"
-
+draft = true
 +++
 
 The internet has democratized the ability to say something meaningful. My question, when will it democratize the ability to do something? What will that look like?

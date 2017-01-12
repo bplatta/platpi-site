@@ -37,7 +37,7 @@
    */
   function isKeyCode(code) {
     return function(c) {
-      event.keyCode === c;
+      code === c;
     }
   }
   function isKey(keyOpts, keyCode) {

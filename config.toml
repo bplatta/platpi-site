@@ -19,7 +19,8 @@ category = "categories"
   landingRoutes = [
     "about", "blog"
   ]
-  postsRepo = "https://github.com/bplatta/platpi-site/tree/master/content/posts"
+  PostsRepo = "https://github.com/bplatta/platpi-site/tree/master/content/posts"
+  PostHistoryPath = "https://github.com/bplatta/platpi-site/commits/master/content/posts/"
 
   # Custom assets can be linked with their paths relative to static/
   custom_css = []
