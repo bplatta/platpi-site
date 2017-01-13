@@ -37,7 +37,8 @@ body {
 }
 
 body p {
-  line-height: 1.8em;
+  line-height: 2.5em;
+  letter-spacing: 1px;
 }
 
 .wrapper {
