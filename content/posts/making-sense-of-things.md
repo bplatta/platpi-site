@@ -30,13 +30,15 @@ I haven't been too explicit as to why these things are dangerous. I think they a
 
 ### Ok then, how to define `I`?
 
-Now, this is a tough one. It of course is quite dependent on the context imposed on us as we grow. I might step into some logically dubious territory here. If its all the same to you, I request you gloss over that. You see, deciding on the values with which to define `I` (because indeed, `I` is synonomous with what we value, how we construct meaning) seems to be a chicken or the egg situation, some circular logic: we choose to value X only because X is already in the equation! 
+Now, this is a tough one. It of course is quite dependent on the context imposed on us as we grow. I might step into some logically dubious territory here. If its all the same to you, I request you gloss over that. You see, deciding on the values with which to define `I` (indeed, it is synonomous with what we value, how we construct meaning) seems to be a chicken or the egg situation, some circular logic: we choose to value X only because X is already in the equation! 
 
 It is here where we admit some objective authoritative voice. Typically this is in pursuit of the golden chalice, the ultimate great goal: the "capital T Truth" (as DFW puts it). There are plenty of places you can go for this. And as DFW puts it: "Everybody worships. The only choice we get is what to worship." He goes on to say that the motivation for subbing in some religion here, Allah, Jesus or the Wicken mother goddess, is that most other choices will "eat you alive". He states this as an absolute Truth: worship intelligence and you will always feel a fraud, your beauty and you will "die a thousand deaths before they plant you". The hardline I've taken is a hard line indeed. But the choice here is decidedly in the grey area. DFW finishes the unbelieving atheist parable with the following assessment: "the religious dogmatist problem is exactly the same as the stories unbeliever: blind certainty". And so we arrive at my first rule: `I` will not contain anything that entails blind certainty. This of course means accepting a pretty bleak Truth. A Truth about Truth. That feels like the closest we can get. The beauty comes with the freedom to choose. The prevailing uncertainty allows us the opportunity to choose how to percieve something. This takes discipline and patience. Another rule has been alluded to. Exclude all things that feel like competition on the wrong dimension, any transient fact that manifests itself as unsubstantiated confidence, e.g. your beauty or smarts.
 
-So I've decided on things to avoid incorporating into my sense of self. The question remains, what to include? Well, the [smaller the better](http://paulgraham.com/identity.html).
+So I've decided on things to avoid incorporating into my sense of self. The question remains, what to include? Well, the [smaller the better](http://paulgraham.com/identity.html). Choosing the right things is important here. Pride in positive things can be powerful. Here's my current list: disciplined, honest, patient, optimistic and midwestern-nice-guy. These serve me. They do not implicitly require a comparison with anyone else. Burning these into myself will indeed anchor and prime my interpretation, but positively. The traits invite checks and balances. Discipline requires honest self-assessment. Optimism requires discipline. This is my current take on things. I'll let you know how it goes.
 
 #### What now?
+
+
 
 #### How? Not so subtle.
 
@@ -97,3 +99,8 @@ religious dogmatist problem is exactly the same as the stories unbeliever: blind
 
 Up simba. 
 "there's a tension between what John McCain's appeal is and the way tthat appeal must be stractured and packaged in order to get him elected. to get you to buy."
+
+
+Kant - categorical imperative. Its what we all truly believe when were thinking sensibly. govt - a universally valid will under which everyone can be free. govt is exernalized, institutionalized best version of ourselves.
+
+Derrida - deconstructed false dichotomies. Slaves when under the rule of our own passions.

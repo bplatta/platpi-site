@@ -1,7 +1,7 @@
 (function() {
-  const activeClass = 'is-active';
-  const mainNavId = 'main-nav';
-  const hamburgerButton = 'ham-button';
+  var activeClass = 'is-active';
+  var mainNavId = 'main-nav';
+  var hamburgerButton = 'ham-button';
 
   /**
    * Page functions
@@ -13,7 +13,7 @@
    * @return {[type]}       [description]
    */
   function randomFromArray(array) {
-    const randomIndex = Math.floor(Math.random() * array.length);
+    var randomIndex = Math.floor(Math.random() * array.length);
     return array[randomIndex];
   }
 
@@ -23,7 +23,7 @@
    * @return {Boolean}
    */
   function isOneOf(keyOpts) {
-    const options = Array.isArray(keyOpts) ? keyOpts : Array.from(arguments);
+    var options = Array.isArray(keyOpts) ? keyOpts : Array.from(arguments);
 
     return function(keyValue) {
       if (!keyValue) return false;
@@ -37,18 +37,18 @@
    */
   function isKeyCode(code) {
     return function(c) {
-      code === c;
+      return c === code;
     }
   }
   function isKey(keyOpts, keyCode) {
-    const isKeyString = isOneOf(keyOpts);
-    const isThisCode = isKeyCode(keyCode)
+    var isKeyString = isOneOf(keyOpts);
+    var isThisCode = isKeyCode(keyCode)
     return function (e) {
       return isKeyString(e.key) || isThisCode(e.keyCode);
     }
   }
-  const isEscapeKey = isKey(['Escape', 'Esc'], 27);
-  const isM = isKey(['m'], 77);
+  var isEscapeKey = isKey(['Escape', 'Esc'], 27);
+  var isM = isKey(['m'], 77);
 
   /**
    * Toggle menu class
@@ -74,7 +74,7 @@
    * Call queue functions on window.onload
    * @type {Array}
    */
-  let onloadQueue = [];
+  var onloadQueue = [];
 
   
   /***************
@@ -84,7 +84,6 @@
    **************/
   
   if (!window.isLandingPage) {
-
     /**
      * Setup some nifty shortcodes for fun
      * @param  {window.Event} e
@@ -92,9 +91,13 @@
     window.document.onkeydown = function(e) {
       e = e || window.event;
       // toggle menu on 'm' press
-      if (isM(e)) toggleMenu();
+      if (isM(e)) {
+        toggleMenu();
+      }
       // toggle menu on escape if its open
-      else if (isEscapeKey(e) && menuIsActive()) toggleMenu(); //
+      else if (isEscapeKey(e) && menuIsActive()) {
+        toggleMenu();
+      }
     }
 
     /**
@@ -107,10 +110,10 @@
     //
     // For the root / - Landing page JS
     // 
-    const landingPageId = 'landing-page';
+    var landingPageId = 'landing-page';
     
     function changeLogoClassWait() {
-      const element = document.getElementById(landingPageId);
+      var element = document.getElementById(landingPageId);
       setTimeout(function() {
         element.classList.add(randomFromArray(['orange', 'green']));
       }, 1300)

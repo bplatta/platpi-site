@@ -1,7 +1,7 @@
 baseurl = "https://platpi.com/"
 languageCode = "en-US"
 DefaultContentLanguage = "en"
-title = "platpi"
+title = "Platpi"
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
 theme = "hugo-simpl"

@@ -21,7 +21,7 @@
             <div class="facts">
               <span class="project-stage">{{ .Params.stage }}</span>
               {{ if .Params.live }}<span class="live">Live</span>{{ end }}
-              {{ if .Params.site }}
+              {{ if and .Params.site .Params.live }}
               <span>
                 <a href="{{ .Params.site }}">
                   <i class="fa fa-globe"></i>
