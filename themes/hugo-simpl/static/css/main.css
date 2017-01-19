@@ -45,7 +45,7 @@ body p {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-  background-color: #032742;
+  background-color:  #032742;
   color: #f5f8fb;
 }
 
@@ -356,7 +356,7 @@ pre > code {
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 30px;
     height: 4px;
-    border-bottom: 1px solid #08f193;
+    border-bottom: 1px solid rgba(255, 115, 56, 1);
     border-radius: 1px;
     background-color: #06426e;
     position: absolute;

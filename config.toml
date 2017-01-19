@@ -53,8 +53,8 @@ category = "categories"
   identifier = "contact"
   url = "/contact/"
 [[menu.main]]
-  name = "projects"
+  name = "software"
   weight = 400
   landing = "false"
-  identifier = "projects"
-  url = "/projects/"
+  identifier = "software"
+  url = "/software/"
