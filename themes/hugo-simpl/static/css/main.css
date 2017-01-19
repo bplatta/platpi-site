@@ -45,8 +45,8 @@ body p {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-  background-color:  #032742;
-  color: #f5f8fb;
+  background-color: #FFFFFF;
+  color: #032742;
 }
 
 [class^="content"] {
@@ -57,7 +57,7 @@ body p {
 [class^="content"]> h5 {
   text-align: center;
   /*border-bottom: 1px solid #f5f8fb;*/
-  color: #f5f8fb;
+  color: #032742;
 }
 .float-right {
   float: right;
@@ -82,7 +82,7 @@ body p {
  */
 
 a, a:link, a:visited, a:focus, a:hover a:active {
-  color: #08f193; /* primary_color_light */
+  color: rgb(7, 227, 138); /* primary_color_light */
   cursor: pointer;
   text-decoration: none;
   
@@ -118,7 +118,7 @@ code {
 
 pre {
   background: #f4f5f6;
-  border-left: 0.3rem solid #00AC67;
+  border-left: 0.3rem solid rgb(7, 227, 138);
 }
 
 pre > code {
@@ -138,7 +138,7 @@ pre > code {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(3,39,66,0.9);
+  background: rgba(255,255,255,0.9);
   z-index: 10;
 }
 
@@ -163,9 +163,9 @@ pre > code {
   height: 100%;
   z-index: -1;
   
-  -moz-border-image: -moz-linear-gradient(right, rgba(255, 115, 56, 1) 0%, rgba(0, 172, 103, 1) 100%);
-  -webkit-border-image: -webkit-linear-gradient(right, rgba(255, 115, 56, 1) 0%, rgba(0, 172, 103, 1) 100%);
-  border-image: linear-gradient(to left, rgba(255, 115, 56, 1) 0%, rgba(0, 172, 103, 1) 100%);
+  -moz-border-image: -moz-linear-gradient(right, rgba(255, 115, 56, 1) 0%, rgba(8, 241, 147, 1) 100%);
+  -webkit-border-image: -webkit-linear-gradient(right, rgba(255, 115, 56, 1) 0%, rgba(8, 241, 147, 1) 100%);
+  border-image: linear-gradient(to left, rgba(255, 115, 56, 1) 0%, rgba(8, 241, 147, 1) 100%);
   border-image-slice: 1;
   border-bottom: 1px solid transparent;
   transition: opacity 0.5s ease;
@@ -184,12 +184,12 @@ pre > code {
 .header-nav a:focus,
 .header-nav a:active,
 .header-nav a:hover {
-  color: white;
+  color: #032742;
 }
 .header-nav .hamburger-inner,
 .header-nav .hamburger-inner::after,
 .header-nav .hamburger-inner::before {
-  background-color: white;
+  background-color: #032742;
 }
 
 #main-nav-list {
@@ -267,12 +267,12 @@ pre > code {
 .header-nav .logo span {
   border-radius: 50%;
   display: inline-block;
-  border: 3px solid #fff;
+  border: 3px solid #032742;
   width: 2em;
   position: absolute;
   top: 7px;
   height: 2em;
-  box-shadow: 1.5px -0.5px 5px #08f193;
+  box-shadow: 1.5px -0.5px 5px #07e38a;
 }
 
 /*.header-nav .logo span,
@@ -296,14 +296,14 @@ pre > code {
   left: 5px;
   width: 5px;
   height: 25px;
-  box-shadow: 1px 1px 0.8px #08f193;
+  box-shadow: 1px 1px 0.8px #07e38a;
   border-radius: 1px;
 }
 .header-nav .logo span {
   top: 11px;
   width: 30px;
   height: 5px;
-  box-shadow: 1px -0.5px 0.8px #08f193;
+  box-shadow: 1px -0.5px 0.8px #07e38a;
   border-radius: 1px;
 }
 .header-nav .logo span::after {
@@ -311,7 +311,7 @@ pre > code {
   height: 25px;
   top: 5px;
   left: 20px;
-  box-shadow: 1px 0px 0.8px #08f193;
+  box-shadow: 1px 0px 0.8px #07e38a;
   border-bottom-right-radius: 1px;
   border-bottom-left-radius: 1px;
 }*/
@@ -458,7 +458,7 @@ pre > code {
   font-size: 1.3em;
 } 
 /* link color changes with logo */
-#landing-page.green .landing-par a { color: #08f193; }
+#landing-page.green .landing-par a { color: #07e38a; }
 #landing-page.orange .landing-par a { color: #ff8f5f; }
 #landing-page.dark .landing-par a { color: #0E5590; }
 
@@ -580,7 +580,7 @@ pre > code {
   margin: 0 3px; 
 }
 .tag-row.tags span {
-  background-color: #00AC67; 
+  background-color: rgb(7, 227, 138); 
 }
 .tag-row span a {
   color: white; 
@@ -678,7 +678,7 @@ pre > code {
   background-color: #188df0;
 }
 .bg-color-2 {
-  background-color: #08f193;
+  background-color: #07e38a;
 }
 .bg-color-3 {
   background-color: #FF7338;
@@ -688,7 +688,7 @@ pre > code {
   color: #188df0;
 }
 .color-2 {
-  color: #08f193;
+  color: #07e38a;
 }
 .color-3 {
   color: #FF7338;
@@ -701,7 +701,7 @@ pre > code {
 #footer {
   width: 100%;
   text-align: center;
-  color: #f5f8fb;
+  color: #032742;
   opacity: 0.5;
   padding-bottom: 5px;
   position: absolute;
@@ -712,13 +712,14 @@ pre > code {
   color: white;
 }
 
-.ff-logo { width: 60px; display: inline-block; }
+.ff-logo { width: 66px; display: inline-block; }
 .ff-logo div {
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   margin: 2px;
   border-radius: 50%;
   background: white;
+  border: 1px solid #032742;
   float: left;
 }
 .content-list-projects .project-logo .ff-logo div {
