@@ -1,13 +1,18 @@
 +++
-description = "Microservice architecture and functional program design come from the same idea"
+description = "On composure and emergence"
 tags = [
+    "emergence",
+    "functional"
 ]
 categories = [
   "software",
-  "functional-programming",
-  "microservices"
+  "microservices",
+  "theory"
 ]
-title = "Microservices, Functional Programming, World: composed"
-date = "2016-12-14T17:23:38-06:00"
+title = "Functional Programming, Microservices, World: Composed and Complex"
+date = "2017-01-28T17:23:38-06:00"
 +++
+
+
+
 

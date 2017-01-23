@@ -5,8 +5,8 @@ tags = [
 categories = [
     "economics"
 ]
-title = "The Internet's (Needs a) New Groove"
-date = "2016-12-21T00:28:23-06:00"
+title = "A New Normal"
+date = "2017-01-22T00:28:23-06:00"
 length = "13"
 
 +++

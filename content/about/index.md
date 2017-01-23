@@ -3,8 +3,8 @@ title = "About"
 social = true
 +++
 
-Platpi Software is just I, Ben Platta. It is the house for some applications I'm working on.
+Platpi Software builds software that serve its users. Our goals when building applications are <a href="https://www.infoq.com/presentations/Simple-Made-Easy" target="_blank">simplicity</a>, efficacy and honesty. Technology should be designed with the <a href="https://www.calmtech.com" target="_blank">best interests</a> of its users in mind. It should complete its task and step aside.
 
-My goals when building applications are <a href="https://www.infoq.com/presentations/Simple-Made-Easy" target="_blank">simplicity</a> and efficacy. Technology should service its users and get out of the way. I think applications often tend toward negative outcomes for their users simply due to the business model of the company and the incentives they face. My goal is to avoid those business models and instead build tech that works <a href="https://www.calmtech.com" target="_blank">for its users</a>.
+Crucial to this are honest business models that align the product development and motives of the company with the interests of the user. When we put out apps, this will be on the top of our minds. We also do contract work where we specialize in application development and building out predictive analytics for your organization.
 
-You'll notice I have a blog. Listen, I'm well aware of the signal to noise ratio we're all dealing with these days. I don't mean to contribute to the noise. It's mainly a place to track my thinking.
+Despite the pronoun usage above, Platpi is just I, Ben Platta. You can get in touch by emailing me `ben` at this domain `platpi.com`.

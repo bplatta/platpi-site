@@ -17,6 +17,10 @@
  * orange - FF7338
  * green 00AC67
  *
+ * text - #032742
+ * green #07e38a / rgb(7, 227, 138); opposite: #F81C75 / rgb(248,28,117);
+ * orange #FF733 / rgb(255, 115, 56); opposite: #008CC7 / rgb(0, 140, 199);
+ *
  * 
  */
 
@@ -45,7 +49,12 @@ body p {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-  background-color: #FFFFFF;
+  
+  background: -moz-linear-gradient(-45deg, rgba(255,255,255, 1) 10%, rgba(239, 239, 239, 1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 10%,rgba(239, 239, 239, 1) 100%);
+  background: linear-gradient(135deg, rgba(255,255,255,1) 10%,rgba(239, 239, 239, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#EFEFEF',GradientType=1 );
+  
   color: #032742;
 }
 
@@ -106,8 +115,8 @@ h3 {
  * Code snippet styling
  */
 code {
-  background: #f4f5f6;
-  color: #021A2C;
+  background: #021A2C;
+  color: white;
   border-radius: .4rem;
   font-size: 86%;
   margin: 0 .2rem;
@@ -138,23 +147,18 @@ pre > code {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255,255,255,0.9);
+  
+  background: -moz-linear-gradient(-45deg, rgba(255,255,255, 0.9) 10%, rgba(239, 239, 239, 0.9) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(255,255,255,0.9) 10%,rgba(239, 239, 239, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(255,255,255,0.9) 10%,rgba(239, 239, 239, 0.9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#EFEFEF',GradientType=1 );
+  
   z-index: 10;
 }
 
 /**
  * We use psuedo elements to do gradient css transitions
  */
-/*.header-nav::before {
-  content: '';
-  z-index: -2;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: white; 
-  position: absolute;
-  opacity: 0.85;
-}*/
 
 .header-nav:after {
   content: '';
@@ -221,34 +225,11 @@ pre > code {
   transition: max-height 0.5s ease, opacity 0.4s ease 0.1s;
 }
 
-/**
- * Active navigation - menu grows and opacity is altered for visibility
- */
-/*.header-nav.transparent.is-active::before {
-  opacity: 0.9;
-  transition: opacity 0.1s ease-out 0.1s;
-  -webkit-transition: opacity 0.3s ease-out 0.1s;
-  -moz-transition: opacity 0.3s ease-out 0.1s;
-  -ms-transition: opacity 0.3s ease-out 0.1s;
-  -o-transition: opacity 0.3s ease-out 0.1s;
-}*/
-
 .header-nav.is-active .nav-options{
   max-height: 30em;
   opacity: 0.9;
   pointer-events: all;
 }
-
-/*.header-nav.transparent.is-active .nav-options{
-  max-height: 30em;
-  opacity: 0.9;
-
-  transition: opacity 0.5s ease 0.1s;
-  -webkit-transition: opacity 0.5s ease 0.1s;
-  -moz-transition: opacity 0.5s ease 0.1s;
-  -ms-transition: opacity 0.5s ease 0.1s;
-  -o-transition: opacity 0.5s ease 0.1s;
-}*/
 
 /**
  * Logo styling
@@ -267,54 +248,13 @@ pre > code {
 .header-nav .logo span {
   border-radius: 50%;
   display: inline-block;
-  border: 3px solid #032742;
+  border: 3px solid rgba(3,39,66, 0.75);
   width: 2em;
   position: absolute;
   top: 7px;
   height: 2em;
   box-shadow: 1px 0.5px 2px #07e38a;
 }
-
-/*.header-nav .logo span,
-.header-nav .logo span::after,
-.header-nav .logo span::before {
-  content: '';
-  position: absolute;
-  background-color: white;
-  display: inline-block;
-  opacity: 0.9;
-
-  transition: background-color 0.2s ease;
-  -webkit-transition: background-color 0.2s ease;
-  -moz-transition: background-color 0.2s ease;
-  -ms-transition: background-color 0.2s ease;
-  -o-transition: background-color 0.2s ease;
-}
-
-.header-nav .logo span::before {
-  top: 7px;
-  left: 5px;
-  width: 5px;
-  height: 25px;
-  box-shadow: 1px 1px 0.8px #07e38a;
-  border-radius: 1px;
-}
-.header-nav .logo span {
-  top: 11px;
-  width: 30px;
-  height: 5px;
-  box-shadow: 1px -0.5px 0.8px #07e38a;
-  border-radius: 1px;
-}
-.header-nav .logo span::after {
-  width: 5px;
-  height: 25px;
-  top: 5px;
-  left: 20px;
-  box-shadow: 1px 0px 0.8px #07e38a;
-  border-bottom-right-radius: 1px;
-  border-bottom-left-radius: 1px;
-}*/
 
 /*!
  * Hamburgers
@@ -442,10 +382,10 @@ pre > code {
 #landing-page {
   margin: 0 auto;
   text-align: center;
-  color: white;
+  color: #032742;
 }
 #landing-page .landing-par a {
-  color: white;
+  color: #032742;
 
   transition: color 0.4s ease;
   -webkit-transition: color 0.4s ease;
@@ -473,10 +413,12 @@ pre > code {
 .wrapper.home {
   /* main background gradient - change this here
   /* Create one at: http://colorzilla.com/gradient-editor/ */
-  background: -moz-linear-gradient(-45deg, rgba(2,26,44, 1) 10%, rgba(4, 55, 93, 1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, rgba(2,26,44,1) 10%,rgba(4, 55, 93, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, rgba(2,26,44,1) 10%,rgba(4, 55, 93, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#8f188df0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: -moz-linear-gradient(-45deg, rgba(255,255,255, 1) 10%, rgba(239, 239, 239, 1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 10%,rgba(239, 239, 239, 1) 100%);
+  background: linear-gradient(135deg, rgba(255,255,255,1) 10%,rgba(239, 239, 239, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#EFEFEF',GradientType=1 );
+  
+  /*background: #EFEFEF;*/
 }
 .wrapper.home .block-main {
   margin-top: 4em;
@@ -512,10 +454,12 @@ pre > code {
   top: 4px;
   left: 4px;
   border-radius: inherit;
-  background: -moz-linear-gradient(110deg, rgba(2,26,44, 1) 10%, rgba(4, 55, 93, 1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(110deg, rgba(2,26,44,1) 10%,rgba(4, 55, 93, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(310deg, rgba(2,26,44,1) 10%,rgba(4, 55, 93, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#8f188df0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  
+  background: -moz-linear-gradient(-45deg, rgba(255,255,255, 1) 10%, rgba(239, 239, 239, 1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 10%,rgba(239, 239, 239, 1) 100%);
+  background: linear-gradient(135deg, rgba(255,255,255,1) 10%,rgba(239, 239, 239, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#EFEFEF',GradientType=1 );
+  
 }
 
 /* Projects list on landing page */
