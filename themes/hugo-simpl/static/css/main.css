@@ -123,6 +123,7 @@ code {
   padding: .2rem .5rem;
   white-space: nowrap;
   font-size: 1em;
+  font-family: "Helvetica", sans-serif;
 }
 
 pre {
