@@ -1,5 +1,5 @@
 # platpi-site
-Personal website.
+Personal website. Platpi
 
 Contains:
 - projects page to show current state of my projects `content/projects/`
